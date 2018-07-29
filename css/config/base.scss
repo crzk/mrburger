@@ -5,9 +5,10 @@ html,body{
 body{
     font-size: 16px;
     line-height: 1.42;
-    font-family: 'Ubuntu';
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'ubuntu';
+    font-weight: 200;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -45,7 +46,7 @@ footer{
 .wrap{
     position: relative;
     width: 100%;
-    min-width: 960px;
+    min-width: 940px +20px;
     min-height: 100%;
     overflow: hidden;
 }
@@ -55,3 +56,37 @@ footer{
     min-height: 650px;
 }
 
+.container{
+    margin: 0 auto;
+    height: 100%;
+    width: 940px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title{
+    font-family: 'gagalin';
+    font-size: 72px;
+    color: $yellow;
+    margin-bottom: 0;
+    
+    &--color{
+        &_gray{
+            color: $gray;
+        }
+    }
+
+    &--align{
+        &_center{
+            text-align: center;
+        }
+    }
+}
+
+.subtitle{
+    font-family: 'lifehack';
+    font-size: 65px;
+    color: #fff;
+    line-height: 1.1;
+}
